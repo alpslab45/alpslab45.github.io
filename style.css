@@ -1122,14 +1122,11 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
-.med-history {
-    padding: 100px 0;
-}
 
 .med-history h2,
 .medical-team h2,
 .quality-services h2 {
-    margin-bottom: 48px;
+    margin-top: 48px;
     font-size: 48px;
     font-weight: 600;
     color: #404040;
