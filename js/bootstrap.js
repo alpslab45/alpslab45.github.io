@@ -122,19 +122,19 @@
       $$$1.fn.emulateTransitionEnd = transitionEndEmulator;
       $$$1.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
     }
-    /**
-     * --------------------------------------------------------------------------
-     * Public Util Api
-     * --------------------------------------------------------------------------
-     */
+    
+      --------------------------------------------------------------------------
+      Public Util Api
+      --------------------------------------------------------------------------
+    
 
 
     var Util = {
       TRANSITION_END: 'bsTransitionEnd',
       getUID: function getUID(prefix) {
         do {
-          // eslint-disable-next-line no-bitwise
-          prefix += ~~(Math.random() * MAX_UID); // "~~" acts like a faster Math.floor() here
+           eslint-disable-next-line no-bitwise
+          prefix += ~~(Math.random() * MAX_UID);  "~~" acts like a faster Math.floor() here
         } while (document.getElementById(prefix));
 
         return prefix;
@@ -156,7 +156,7 @@
       getTransitionDurationFromElement: function getTransitionDurationFromElement(element) {
         if (!element) {
           return 0;
-        } // Get transition-duration of the element
+        }  Get transition-duration of the element
 
 
         var transitionDuration = $$$1(element).css('transition-duration');
@@ -164,7 +164,7 @@
 
         if (!floatTransitionDuration) {
           return 0;
-        } // If multiple durations are defined, take the first
+        }  If multiple durations are defined, take the first
 
 
         transitionDuration = transitionDuration.split(',')[0];
@@ -241,11 +241,11 @@
     };
 
     var Alert =
-    /*#__PURE__*/
+    #__PURE__
     function () {
       function Alert(element) {
         this._element = element;
-      } // Getters
+      } Getters
 
 
       var _proto = Alert.prototype;
